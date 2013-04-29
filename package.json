@@ -1,0 +1,16 @@
+{
+	"name" : "psn-node",
+	"author" : "Andrew 'Codemaster' Kane <andrew@andrewmkane.com>",
+	"description" : "A library for fetching data from the Playstation Network",
+	"url" : "https://github.com/codemaster/PSNNodeJS",
+	"version" : "0.1.0",
+	"dependencies" : {
+		"request" : "2.20.0",
+		"xml2js" : "0.2.6"
+	},
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/codemaster/PSNNodeJS.git"
+	},
+	"main" : "./psn"
+}
