@@ -88,9 +88,9 @@ function getJID(username, cb) {
 	return true;
 }
 
-function getProfile(region, jid, cb) {
-	submitPSNPOST('http://getprof.' + region + '.np.community.playstation.net/basic_view/func/get_profile',
-	"<profile platform='ps3' sv='" + firmware + "'><jid>" + jid + "</jid></profile>",
+function getProfile(user_obj_jid, cb) {
+	submitPSNPOST('http://getprof.' + user_obj_jid['region'] + '.np.community.playstation.net/basic_view/func/get_profile',
+	"<profile platform='ps3' sv='" + firmware + "'><jid>" + user_obj_jid['jid'] + "</jid></profile>",
 	false,
 	function(error, response, data) {
 		if(error) {
