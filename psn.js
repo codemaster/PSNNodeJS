@@ -35,7 +35,7 @@ function submitPSNPOST(url, body, trophy, cb) {
 
 function getJID(username, cb) {
 	if(username in jidCache) {
-		if(cb) cb(undefined, jidCache[username]);
+		if(cb) cb(null, jidCache[username]);
 		return true;
 	}
 
